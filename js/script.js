@@ -24,4 +24,8 @@ console.log(sumToShort(3));
 
 // ЗАДАЧА 2
 
+const findShort = (string) => string.split(" ").reduce((a, b) => a.length <= b.length ? a : b);
 
+console.log(findShort("Hello world"));
+console.log(findShort("Hi"));
+console.log(findShort("She is David's sister"));
